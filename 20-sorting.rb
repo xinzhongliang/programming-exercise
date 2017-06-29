@@ -2,13 +2,7 @@
 # Hint: 可用 arr.sort 排序，和 arr.uniq 去除重复
 
 def filter_even(arr)
-  foo = []
-  arr.each do |a|
-    if a % 2 == 0
-      foo.push(a)
-    end
-  end
-  foo
+  arr.keep_if{ |e| e % 2 == 0}
 end
 
 arr =  [7, 68, 42, 46, 9, 91, 77, 46, 86, 1]
